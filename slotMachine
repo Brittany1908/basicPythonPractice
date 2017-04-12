@@ -1,0 +1,29 @@
+'''
+NAME: SLOT MACHINE
+PURPOSE: RANDOM GENERATOR SIMULATING A SLOT MACHINE
+ASSUME SLOT MACHINE HAS 30 WHEELS AND 6 PICTURES EACH
+APPEARING 5 TIMES EACH ON THE WHEEL.'''
+
+import random # importing the random module to generate a random selection.
+
+def main():
+    for i in range(3): # loop generating an outcome of 3 selections.
+        outcome = spinWheel();
+        print(outcome, end="  ");
+
+def spinWheel():
+    n = random.randint(1, 20); # generate random numbers ranging from 1 to 20. 
+    if n > 15:
+        return "Cherries"; 
+    elif n > 10:
+        return "Orange";
+    elif n > 5:
+        return "Plum";
+    elif n > 2:
+        return "Melon";
+    elif n > 1:
+        return "Bell";
+    else:
+        return "Bar";
+    
+main()
