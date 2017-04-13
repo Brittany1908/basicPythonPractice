@@ -1,0 +1,12 @@
+# while loop
+
+while condition:
+    indented block of statements;
+    
+# for loop with a range
+
+for randomVariable in randomSequence(m, n, s):
+    indented block of statements;
+    s default is 1
+    
+ 
