@@ -1,0 +1,23 @@
+'''
+NAME: Alphabet Generator
+PURPOSE: Randomly display three letters of the Alphabet
+uses random.choice'''
+
+import random
+
+# Create a list of 26 letters at random from the alphabet.
+list1 = [chr(letter) for letter in range (ord('A'), ord('Z') + 1)]; # plus 1 ensures Z is a part of the list
+# Select three letters from the list at random
+list2 = random.sample(list1, 3);
+# Display the three letters
+print(" , ".join(list2));
+# Example output A, B, C
+
+
+# Create a list of all 26 letters in the alphabet
+letters = "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"
+# Randomly select  and display three
+print(random.sample(letters, 3))
+# Example output ["a", "b", "c"]
+
+
